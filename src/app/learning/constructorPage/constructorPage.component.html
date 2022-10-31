@@ -1,0 +1,38 @@
+<div>
+  <h1 class="question-header">constructor学習用</h1>
+  <div class="explanation-block">
+    <h2>■constructorとは</h2>
+    <p>インスタンス生成時に一番最初に実行される関数です。</p>
+    <p>
+      Angular(TypeScript)だけではなく、他のプログラミング言語にも実装されていることが多いです。
+    </p>
+    <h3>どういう場面で使用するか？</h3>
+    <ul>
+      <li>初期値を設定する。</li>
+      <li>
+        DI(依存性注入)を行う。<span class="caution-label"
+          >※別途説明ページを設けます。</span
+        >
+      </li>
+    </ul>
+    <h3>参考URL</h3>
+    <a
+      href="https://qiita.com/saba_can00/items/4e670235cf63763e63bd"
+      target="_blank"
+    >
+      TypeScriptでのコンストラクタ(constructor)の表現まとめ
+    </a>
+  </div>
+  <h2>設問.</h2>
+  <div class="question-grid">
+    <div class="question-headline">
+      <p>
+        Q.定義済みの変数（dispString）の文字列「初期表示」をconstructorにて以下の文字列に書き換えてください。
+      </p>
+      <p>「constructorにて書き換え済」</p>
+    </div>
+    <div class="answer-block">
+      {{ dispString }}
+    </div>
+  </div>
+</div>

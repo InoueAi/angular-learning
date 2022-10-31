@@ -1,0 +1,59 @@
+/* Add application styles & imports to this file! */
+.header-nav {
+  height: 10vh;
+  a {
+    padding: 0px 5px 0px 5px;
+  }
+}
+
+.main-contents {
+  overflow-y: scroll;
+  height: 85vh;
+}
+
+.question-header {
+  border: solid 1px brown;
+}
+
+.explanation-block {
+  padding: 0%;
+  h2 {
+    background-color: lightskyblue;
+  }
+  h3 {
+    background-color: lightskyblue;
+  }
+}
+
+.question-grid {
+  display: grid;
+  .question-headline {
+    border: dotted skyblue;
+    margin: 10px;
+    padding: 5px;
+  }
+  .answer-block {
+    border: solid 1px lightsalmon;
+    margin: 10px;
+    padding: 5px;
+  }
+}
+
+/** 標準テーブル */
+.basic-table {
+  text-align: center;
+  border-collapse: collapse;
+  th {
+    border: solid 1px darkgray;
+    padding: 5px;
+    background-color: lightcyan;
+  }
+  td {
+    border: solid 1px darkgray;
+    padding: 5px;
+  }
+}
+
+.caution-label {
+  color: red;
+}

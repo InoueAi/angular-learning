@@ -1,0 +1,48 @@
+<div>
+  <h1 class="question-header">ライフサイクル学習用</h1>
+  <div class="explanation-block">
+    <h2>■ライフサイクルとは</h2>
+    <p>
+      フレームワークで定義された、コンポーネントを描画する際に自動で実行される関数です。
+    </p>
+    <p>
+      スクリプト上に記述することで、ライフサイクルに応じたタイミングで処理を実行することができます。
+    </p>
+    <p>このことをライフサイクルフックと呼びます。</p>
+    <h3>概要</h3>
+    <div>よく使われているライフサイクル</div>
+    <ul>
+      <li>ngOnInit：コンポーネントが初期化されたタイミング</li>
+      <li>ngAfterViewInit：コンポーネント初期化後</li>
+      <li>ngOnDestroy：コンポーネントが破棄されるタイミング</li>
+    </ul>
+    <h3>参考URL</h3>
+    <div>
+      <a href="https://angular.jp/guide/lifecycle-hooks" target="_blank"
+        >公式ドキュメント</a
+      >
+    </div>
+    <div>
+      <a
+        href="https://qiita.com/ksh-fthr/items/ccd9861f919c4aa30ae8"
+        target="_blank"
+        >[Angular] ライフサイクルメソッドをみる(ngOnChanges と ngOnInit と
+        ngOnDestroy)</a
+      >
+    </div>
+  </div>
+  <div class="question-grid">
+    <div class="question-headline">
+      Q.
+      ライフサイクルフックを使用し、そのタイミングで配列「data」へライフサイクルフックメソッド名を追加してください。<br />
+      ※タイミングによって実行されないものもあるので、表示されない場合があります。
+    </div>
+    <div class="answer-block">
+      <ul>
+        <li *ngFor="let item of data">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

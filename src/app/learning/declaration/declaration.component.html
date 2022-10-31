@@ -1,0 +1,66 @@
+<div>
+  <h1 class="question-header">変数宣言学習用</h1>
+  <div class="explanation-block">
+    <h2>■変数宣言とは</h2>
+    <p>変数宣言する際に記述するキーワードのことです。</p>
+    <h3>概要</h3>
+    <p>変数を宣言する際に、どのスコープで使用するか使い分け可能です。</p>
+    <table class="basic-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>const</th>
+          <th>let</th>
+          <th>var</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>再宣言</td>
+          <td>×</td>
+          <td>×</td>
+          <td>〇</td>
+        </tr>
+        <tr>
+          <td>再代入</td>
+          <td>×</td>
+          <td>〇</td>
+          <td>〇</td>
+        </tr>
+        <tr>
+          <td>スコープ</td>
+          <td>ブロック</td>
+          <td>ブロック</td>
+          <td>関数</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>概要</h3>
+    <ul>
+      <li>
+        <p>varは使用しません。</p>
+        <p class="caution-label">
+          ※再宣言できるということは、変数を使いまわせるということです。<br />
+          変数が置き換わってしまうとバグが生まれる可能性が非常に高いです。
+        </p>
+      </li>
+      <li>
+        基本的にconstを使用し、カウントアップをする場合などどうしても再代入が必要な場合にletを使用します。
+      </li>
+      <li>
+        <p>配列に要素を追加・削除することは代入とは異なります。</p>
+        <p>
+          すなわち、constで配列を宣言した場合でも要素の追加・削除操作可能です。
+        </p>
+      </li>
+    </ul>
+    <h3>参考URL</h3>
+    <div>
+      <a
+        href="https://qiita.com/cheez921/items/7b57835cb76e70dd0fc4"
+        target="_blank"
+        >const、let、varの使い分け
+      </a>
+    </div>
+  </div>
+</div>

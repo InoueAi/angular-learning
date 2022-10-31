@@ -1,0 +1,63 @@
+<div>
+  <h1 class="question-header">コレクション関数学習用</h1>
+  <div class="explanation-block">
+    <h2>■コレクション関数とは</h2>
+    <p>配列を直感的に操作するJavaScriptの標準関数です。</p>
+    <p>
+      WebAPIなどで取得したデータをクライアントサイドで処理するときに使います。
+    </p>
+    <h3>概要</h3>
+    <ul>
+      <li>配列すべての要素に対して同じメソッドを実行する。</li>
+      <li>配列を条件によって要素を絞り込む。</li>
+      <li>特定のプロパティを合計する。</li>
+    </ul>
+    <h3>参考URL</h3>
+    <a href="https://zenn.dev/web_tips/articles/503da56f2ef8ab" target="_blank"
+      >【JavaScript】お前はまだコレクション関数を知らない</a
+    >
+  </div>
+  <h2>設問.</h2>
+  <div>
+    <ul>
+      <li>
+        getDataメソッドにて元データを取得し、それに対して各設問に回答してください。
+      </li>
+      <li>Q1のみヒントがあります。</li>
+      <li>必要に応じて変数、メソッドを実装してください。</li>
+      <li>表示用HTML、CSSは問いません。</li>
+    </ul>
+  </div>
+  <div class="question-grid">
+    <div class="question-headline">例題. 元データを表示してください。</div>
+    <div class="answer-block">
+      <span *ngFor="let item of data"> {{ item.name }}, </span>
+    </div>
+    <div class="question-headline">
+      Q1. Map関数を使ってnameの文字列を"★"で囲んだものを表示してください。
+    </div>
+    <div class="answer-block">
+      <span *ngFor="let item of dataMap"> {{ item.name }} </span>
+    </div>
+    <div class="question-headline">
+      Q2. filter関数を使ってscoreが50以上のデータを表示してください。
+    </div>
+    <div class="answer-block">
+      <span *ngFor="let item of dataFilter">
+        {{ item.name }}:{{ item.score }}
+      </span>
+    </div>
+    <div class="question-headline">
+      Q3. find関数を使って、dataTypeが1である初めのデータを表示してください。
+    </div>
+    <div class="answer-block">
+      <span *ngIf="dataFind"> {{ dataFind.name }} </span>
+    </div>
+    <div class="question-headline">
+      Q4. scoreが50～60かつ、dataTypeが2であるデータを表示してください。
+    </div>
+    <div class="answer-block">
+      <span *ngFor="let item of dataTotal"> {{ item.name }} </span>
+    </div>
+  </div>
+</div>
