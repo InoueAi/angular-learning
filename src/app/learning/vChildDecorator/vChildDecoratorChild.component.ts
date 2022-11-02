@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'vChildDecoratorChild',
@@ -11,5 +11,9 @@ export class VChildDecoratorChildComponent {
    */
   public alertChild() {
     alert('子コンポーネントのメソッドです。');
+  }
+
+  public messageOutput() {
+    return '出力しました';
   }
 }

@@ -11,7 +11,6 @@ export class TernaryOperatorComponent {
   // Q2用
   private question2Value: number = 100;
 
-  result = this.question1Value = true ? true : false;
+  result = this.question1Value ? true : false;
   result2 = this.question2Value < 50 ? '50未満' : '50より大きい';
-
 }

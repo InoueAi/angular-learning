@@ -21,8 +21,7 @@
       </div>
       <div>
         <a
-          href="https://tkzo.jp/blog/angular6-view-child-view-children/
-"
+          href="https://tkzo.jp/blog/angular6-view-child-view-children/"
           target="_blank"
           >【Angular】@ViewChild / @ViewChildren を理解する</a
         >
@@ -40,12 +39,12 @@
       Q1.@ViewChildを実装し、子コンポーネントの「alertChildメソッド」を実行してください。
     </div>
     <div class="answer-block">
-      <button type="button">Q1確認用</button>
+      <button type="button" (click)="clickEvent()">Q1確認用</button>
     </div>
     <div class="question-headline">
       Q2.@ViewChildを使用し、子コンポーネントの任意の変数を回答欄に表示してください。
     </div>
-    <div class="answer-block"></div>
+    <div class="answer-block">{{ changeMessage }}</div>
   </div>
   <vChildDecoratorChild></vChildDecoratorChild>
 </div>
