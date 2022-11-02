@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styles: [],
 })
 export class ConstructorPageComponent {
-  public dispString: string = '初期表示';
+  public dispString: string = 'constructorにて書き換え済';
 }

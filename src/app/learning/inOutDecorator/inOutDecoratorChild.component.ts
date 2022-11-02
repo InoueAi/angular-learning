@@ -6,8 +6,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styles: [],
 })
 export class InOutDecoratorChildComponent {
+  @Input() inputText: string = '@Inputにて表示';
+  @Output() output: EventEmitter<string> = new EventEmitter();
+
   /**
    * Q2回答用ボタンクリックメソッド
    */
-  public onSendText(): void {}
+  public onSendText(): void {
+    this.output.emit('出力しました!');
+  }
 }
